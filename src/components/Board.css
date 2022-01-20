@@ -1,0 +1,96 @@
+.board {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23.5%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  min-height: 320px;
+  margin-top: 50px;
+}
+ul {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 900;
+  text-shadow: 1px 1px 4px black;
+  padding: 15px;
+  border-radius: 15px;
+}
+.backlog ul,
+.backlog .save-btn {
+  background: orange;
+}
+.in-progress ul,
+.in-progress .save-btn {
+  background: DarkSlateGray;
+}
+.complete ul,
+.complete .save-btn {
+  background: green;
+}
+.on-hold ul,
+.on-hold .save-btn {
+  background: red;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.add-btn {
+  background: transparent;
+}
+.add-btn::first-letter {
+  font-size: 24px;
+}
+.add-btn:hover {
+  background: white;
+  color: black;
+}
+textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 15px;
+}
+li {
+  list-style: none;
+  font-size: 24px;
+  padding: 10px;
+  background: #000;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+.dragactive {
+  opacity: 0.9;
+}
+.drag {
+  border: 1px solid white;
+}
+/******************
+responive for ipad
+******************/
+@media (max-width: 1200px) {
+  .board {
+    flex-wrap: wrap;
+  }
+  section {
+    width: 48% !important;
+  }
+}
+/******************
+responive for mob
+******************/
+@media (max-width: 767px) {
+  section {
+    width: 100% !important;
+  }
+}
